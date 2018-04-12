@@ -6,16 +6,57 @@ class Die {
     this.value = value;
     this.div = document.createElement("div");
     document.body.appendChild(this.div);
-    this.div.style.backgroundColor = "gray";
-    this.div.style.width = "200px";
-    this.div.style.height = "200px";
+    //this.div.style.backgroundColor = "gray";
+    this.div.style.width = "100px";
+    this.div.style.height = "100px";
     this.div.style.cssFloat = "left";
     this.roll();
 
     this.div.addEventListener("click", () => {
       console.log(this);
-      this.divText = Math.floor(Math.random() * 6) + 1;
-      this.div.innerText = this.divText;
+      let diceImg = Math.floor(Math.random() * 6) + 1;  
+     //this.divText = Math.floor(Math.random() * 6) + 1;
+      this.div.innerText = diceImg;
+      this.divText = diceImg;
+      this.div.style.color = "transparent";
+     switch (diceImg) {
+      case 1:
+      this.div.style.backgroundImage = "url('images/side1.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 2:
+      this.div.style.backgroundImage = "url('images/side2.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 3:
+      this.div.style.backgroundImage = "url('images/side3.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 4:
+      this.div.style.backgroundImage = "url('images/side4.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 5:
+      this.div.style.backgroundImage = "url('images/side5.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 6:
+      this.div.style.backgroundImage = "url('images/side6.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+  }
     });
 
     this.div.addEventListener("dblclick", () => {
@@ -23,8 +64,50 @@ class Die {
     });
   }
   roll() {
-    this.divText = Math.floor(Math.random() * 6) + 1;
-    this.div.innerText = this.divText;
+    //this.divText = Math.floor(Math.random() * 6) + 1;
+    //this.div.innerText = this.divText;
+    let diceImg = Math.floor(Math.random() * 6) + 1;  
+    this.div.innerText = diceImg;
+    this.divText = diceImg;
+    this.div.style.color = "transparent";
+    switch (diceImg) {
+      case 1:
+      this.div.style.backgroundImage = "url('images/side1.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 2:
+      this.div.style.backgroundImage = "url('images/side2.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 3:
+      this.div.style.backgroundImage = "url('images/side3.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 4:
+      this.div.style.backgroundImage = "url('images/side4.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 5:
+      this.div.style.backgroundImage = "url('images/side5.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+      case 6:
+      this.div.style.backgroundImage = "url('images/side6.svg')";
+      this.div.style.backgroundRepeat = "no-repeat";
+      this.div.style.height = "100px";
+      this.div.style.weidth = "100px";
+          break;
+  }
   }
 
   removeDie() {
@@ -51,5 +134,5 @@ document.getElementById("sumDie").addEventListener("click", function() {
   for (a = 0; a < dice.length; a++) {
     sum = sum + dice[a].divText;
   }
-  alert(`${sum}`);
+  alert(`The total of all rolled dice is ${sum}!`);
 });

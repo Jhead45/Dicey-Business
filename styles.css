@@ -1,7 +1,55 @@
-
+body {
+    background-color: lightgray;
+}
 
 #buttonDiv {
-    width: 600px;
-    height: 100px;
-    align-content: center;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+
+#newDie {
+    width: 300px;
+    height: 60px;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(245, 28, 28);
+    background-color: rgb(128, 188, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: inset;
+    border-radius: 10px;
+    border-width: medium;
+    border-color: black;
+    
+
+}
+
+#allDie {
+    width: 300px;
+    height: 60px;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(245, 28, 28);
+    background-color: rgb(128, 188, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: inset;
+    border-radius: 10px;
+    border-width: medium;
+    border-color: black;
+
+}
+
+#sumDie {
+    width: 300px;
+    height: 60px;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(245, 28, 28);
+    background-color: rgb(128, 188, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: inset;
+    border-radius: 10px;
+    border-width: medium;
+    border-color: black;
+
 }
